@@ -10,7 +10,15 @@ class PostsIndex extends Component{
   }
 
   render(){
-    return (<div>List of Blog posts</div>);
+    return (
+      <div>
+        <div className="text-xs-right">
+          <Link to="/posts/new" className="btn btn-primary">
+            Add a Post
+          </Link>
+        </div>
+        List of Blog posts
+      </div>);
   }
 }
 
